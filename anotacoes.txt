@@ -1,0 +1,26 @@
+// instalar typescript
+
+npm i typescript -D
+yarn add typescript -D
+
+// instalar @types/node
+yarn add @types/node
+
+sem isso o ts-node não consegue compilar os arquivos typescript porque ele não reconhece as definições de, por exemplo,
+console.log. Ou para projetos browser add "dom" ao objeto "lib" do tsconfig
+
+// .bin node_modules
+lá ficam os arquivos executáveis das libs que importamos no package.json
+
+// script mode
+é basicamente um arquivo de javascript enorme (tanto o index.ts e index.js em um arquivo só), 
+logo as funções e variáveis estão em um mesmo arquivo
+
+// module mode
+usando export automaticamente assume que estamos em module_mode, saímos do escopo global do javascript
+
+// @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+integração do eslint com o typescript
+
+// prettier eslint-config-prettier eslint-plugin-prettier -D
+integração do prettier com typscript e eslint
