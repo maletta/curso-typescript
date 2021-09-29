@@ -34,7 +34,21 @@ type Intersecao = AB & AC;
 // o resultado da interseção é o tipo A, porque ele é a interseção dos tipos
 // porque ele é o atributo em comum  nesses conjuntos de tipo
 
+// ----------------- outro exemplo -----------------
+
+type portugues = { nome: string; cpf: number };
+type portgues2 = { nome: string; sobrenome: string };
+
+type gringo = portugues & portgues2;
+
+const novaPessoa: gringo = {
+  nome: 'mauricio',
+  sobrenome: 'maletta',
+  cpf: 123,
+};
+
 export default {
   pessoa1,
   pessoa2,
+  novaPessoa,
 };
