@@ -9,6 +9,7 @@
 class Pessoa {
   constructor(
     private _nome: string, // já criei o atributo 'nome' com get e set
+    // é uma convenção do js deixar atributos privados com _
     private sobrenome: string,
     private idade: number,
     private cpf: string,
