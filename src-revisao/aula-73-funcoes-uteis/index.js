@@ -1,6 +1,7 @@
 // métodos úteis para objetos
 
-// Object.assign para copiar objetos
+// Object.assign para copiar objetos para outra referência
+// ou seja, não mantém o mesmo endereço na memória
 
 const produto1 = { nome: 'teclado', preco: 90, modelo: 'qwerty' };
 const produto2 = { nome: 'mouse', preco: 50, cor: 'preto' };
