@@ -48,20 +48,36 @@ console.log('-----------------------------------------');
 // nomeCompleto é apenas uma propriedade que pode ser acessada
 
 // Factory Function
-function criarPessoa(nome, sobrenome) {
+function criarPessoa(nome, sobrenome, idade) {
+  let idadePrivada = idade;
   return {
     nome,
     sobrenome,
     get nomeCompleto() {
       return `${this.nome} ${this.sobrenome}`;
     },
+    get idade() {
+      return `${idadePrivada} anos`;
+    },
+    set idade(valor) {
+      if (typeof valor !== 'number') {
+        console.log('valor inesperado para idade');
+        return;
+      }
+      idadePrivada = valor;
+    },
   };
 }
 
-const p1 = criarPessoa('Luiz', 'Otávio');
+const p1 = criarPessoa('Luiz', 'Otávio', 24);
 
 console.log('Factory function');
-console.log('p1', p1, p1.nomeCompleto);
+console.log();
+console.log('p1', p1, p1.nomeCompleto, p1.idade);
+p1.idade = 767;
+p1.idade = 'Um texto para idade';
+console.log();
+console.log('p1', p1, p1.nomeCompleto, p1.idade);
 console.log();
 
 // Constructor Object
