@@ -31,16 +31,14 @@ function obtemSoma(array = []) {
 }
 
 function validaCpf(array = []) {
-  const cpfSemDigitosValidadores = array.splice(0, array.length - 2);
+  const cpfSemDigitosValidadores = array.slice(0, -2); // (inicio, fim) === (0, array.lenght - 2)
   const primeiroDigito = obtemSoma(cpfSemDigitosValidadores);
   const segundoDigito = obtemSoma([
     ...cpfSemDigitosValidadores,
     primeiroDigito,
   ]);
 
-  const digitosValidadores = array
-    .splice(array.length - 2, array.length)
-    .join('');
+  const digitosValidadores = array.slice(-2).join('');
 
   const digitosGerados = `${primeiroDigito}${segundoDigito}`;
 
