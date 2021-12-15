@@ -18,7 +18,7 @@ pessoa2.nome = 'Mauricio';
 pessoa2.idade = 24;
 
 // algumas vantagens de funções e métodos dentro do objeto é ter acesso
-// as propriedades do objeto com o thus
+// as propriedades do objeto com o this
 
 pessoa2.falarNome = function () {
   return `${this.nome} está falando o seu nome.`;
