@@ -1,0 +1,8 @@
+unknown é um tipo mais seguro que o any, pois o any permite ser somado com um number,
+o unknown não permite ser somado com um number, a não ser que se faça uma 
+validação de typeof deses valor unknown.
+
+tipo literals é usar um valor como tipo para uma variável:
+let y:10 = 10 // y só poder ter o valor de 10 literal annotation
+const y = 10 // y só pode ter o valor de 10, const assertion
+

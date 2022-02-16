@@ -1,0 +1,4 @@
+unknown é um tipo mais seguro que o any, pois o any permite ser somado com um number,
+o unknown não permite ser somado com um number, a não ser que se faça uma 
+validação de typeof deses valor unknown.
+

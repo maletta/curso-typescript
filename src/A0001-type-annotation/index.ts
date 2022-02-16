@@ -18,6 +18,9 @@ const pessoa: { nome: string; idade: number; adulto?: boolean } = {
   idade: 0,
 };
 
+// adulto está undefined pois não foi definido na declaração do objeto
+console.log('objeto pessoa adulto? ', pessoa, pessoa.adulto);
+
 // Funções
 function soma(x: number, y: number): number {
   return x + y;

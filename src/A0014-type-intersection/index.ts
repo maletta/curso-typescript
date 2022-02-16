@@ -28,11 +28,18 @@ const pessoa2: Pessoa2 = {
 
 type AB = 'A' | 'B';
 type AC = 'A' | 'C';
+// type AB = string | boolean;
+// type AC = string | number;
 
+// interseção é a operação em que produz um conjunto com todos os elementos
+// comuns a dois outros conjuntos
 type Intersecao = AB & AC;
 
 // o resultado da interseção é o tipo A, porque ele é a interseção dos tipos
 // porque ele é o atributo em comum  nesses conjuntos de tipo
+
+const intersecao1: Intersecao = 'A';
+// const intersecao2: Intersecao = 'B';
 
 // ----------------- outro exemplo -----------------
 
@@ -41,6 +48,7 @@ type portgues2 = { nome: string; sobrenome: string };
 
 type gringo = portugues & portgues2;
 
+// preciso atribuir todos os atributos de portugues e portugues2
 const novaPessoa: gringo = {
   nome: 'mauricio',
   sobrenome: 'maletta',
@@ -51,4 +59,5 @@ export default {
   pessoa1,
   pessoa2,
   novaPessoa,
+  intersecao1,
 };

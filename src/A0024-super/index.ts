@@ -36,7 +36,7 @@ class Aluno extends Pessoa {
     sobrenome: string,
     idade: number,
     cpf: string,
-    public sala: string,
+    public sala: string, // atributo só de Aluno
   ) {
     super(nome, sobrenome, idade, cpf);
   }
@@ -44,7 +44,7 @@ class Aluno extends Pessoa {
   public getNomeCompleto(): string {
     console.log('Fazendo algo antes no método de Aluno');
     const result = super.getNomeCompleto();
-    return `Sou o aluno ${result}`;
+    return `Sou o aluno ${result} da ${this.sala}`;
   }
 }
 
@@ -65,7 +65,10 @@ const aluno = new Aluno(
 const cliente = new Cliente('Mauricio', 'Maletta', 24, '000.000.000-00');
 
 console.log(pessoa);
+console.log(pessoa.getNomeCompleto());
 console.log(aluno);
+console.log(aluno.getNomeCompleto());
 console.log(cliente);
+console.log(cliente.getNomeCompleto());
 
 export { Pessoa, Aluno, Cliente };

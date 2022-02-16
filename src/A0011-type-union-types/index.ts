@@ -8,7 +8,9 @@ function add(a: number, b: number): number {
 
 function addOrConcat(a: number | string, b: number | string): number | string {
   // return a + b;  typescript não aceita, ele quer que provemos o valor pra ele
-  // por mais que no jascript puro seja aceito
+  // por mais que no javascript puro seja aceito
+  // o tipo number | string não pode usar operador + pra somar
+  // mas validando que o valor é number é possível utilizar o operador + para somar
 
   if (typeof a === 'number' && typeof b === 'number') return a + b;
 

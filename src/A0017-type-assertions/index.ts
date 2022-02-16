@@ -5,14 +5,15 @@ const body1 = document.querySelector('body');
 // body pode ser um objeto do tipo HTMLBodyElement ou null
 // então é preciso fazer uma verificação antes de usar o objeto
 
-/* Recomendado */
-// Condicional
+/* Recomendado - Validação condicional */
+// Condicional - verfica se não é null e nem undefined
 if (body1) body1.style.background = 'red';
 
-/* Não Recomendado */
+/* Não Recomendado - Non-null assertion (!) */
 // esse assertion diz que o valor dele não será null
+// elimina null e undefined como possíveis valores
 // neste caso não é aconselhável usar
-// Non-null assertion (!)
+// Non-null assertion (!) - programdor afirma que não é null e nem undefined, pode quebrar caso o programador erre
 const body2 = document.querySelector('body')!;
 
 /* Recomendado */

@@ -3,11 +3,11 @@
 let x = 10; // eslint-disable-line
 // x é inferido como number
 x = 0b1010; // alterei o valor pra outro tipo de number
-// x = 'Mauricio maletta '; x já é do tipo number, não pode receber string
+// x = 'Mauricio maletta '; //  x já é do tipo number, não pode receber string
 
 // tipo literal
 const y = 10;
-// além de ser tipo number, ele é ums subtipo de number
+// além de ser tipo number, ele é um subtipo de number
 // ele é um subtipo de number com valor 10 que não pode ser alterado, nunca
 // ou seja seu tipo é number, subtipo 10, só aceita 10 como valor possível
 
@@ -29,6 +29,7 @@ const pessoa = {
 // pessoa.nome possui o valor literal
 
 pessoa.sobrenome = 'Montes';
+
 // pessoa.nome = 'Marecelo'; não é possível alterar o valor literal pessoa.nome
 
 // não confundir cor: 'Vermelho' | 'Amarelo' | 'Azul' com valor
@@ -45,6 +46,8 @@ enum cores {
 }
 
 console.log('escolha a cor ', escolhaACor('Amarelo'));
+// console.log('escolha a cor ', escolhaACor(cores.Amarelo)); // cores.Amarelo = "Cinza"
+// O argumento do tipo 'cores.Amarelo' não é atribuível ao parâmetro do tipo '"Vermelho" | "Amarelo" | "Azul"'
 console.log('escolha a cor + enum', escolhaACor(cores.Vermelho));
 
 // Module mode, assim eu uso as variáveis declaradas nesse contexto, no contexto

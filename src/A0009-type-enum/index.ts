@@ -1,6 +1,8 @@
 // é uma estrutura de dados ou de valor do typescript
 // possui valores enumerados e não necessariamente ordenados
 // atribui valores para os índices automaticamente incrementando 1
+// meu_enum[0] = "elemento0";  //sempre vai ter uma chave e um valor correspondente ao elemento,
+// meu_enum["elemento0"] =  0; // e seu o inverso
 
 enum Cores {
   VERMELHO, // 0
@@ -22,8 +24,12 @@ console.log(Cores);
 console.log(Cores.VERMELHO);
 console.log(Cores[0]);
 
-console.log('enum Cores Ordem Alterada');
+console.log('---------------------------');
+console.log('\n enum Cores Ordem Alterada');
 console.log(CoresOrdemAlterada);
+console.log(CoresOrdemAlterada.VERMELHO);
+console.log(CoresOrdemAlterada[0]);
+console.log(CoresOrdemAlterada[1]);
 
 export default {
   Cores,

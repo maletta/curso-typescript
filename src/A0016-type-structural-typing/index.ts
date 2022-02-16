@@ -19,7 +19,7 @@ const verifyUser: VerifyUserFn = (user, receivedValue) => {
 // isso é Structural Typing
 // precisa ter ao menos os mesmos atributos de User (username: string, password: string);
 // linguagens fortemente tipadas não aceitam esse tipo de inferência de identidade dos tipos
-const dbUser = { username: 'mauricio', password: '123456' };
+const dbUser = { username: 'mauricio', password: '123456', token: 1234 };
 const receivedData = { username: 'mauricio', password: '123456' };
 
 const loggedIn = verifyUser(dbUser, receivedData);

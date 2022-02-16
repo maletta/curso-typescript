@@ -14,8 +14,9 @@ const dadosCliente3: [number, string, ...string[]] = [
   'Mauricio',
   'vai virar rest 1',
   'vai virar rest 2',
-]; // a partir do terceiro valor vai virar um array de string
+]; // a partir do terceiro valor todos os elementos serão string
 // interessante para determinar o tipo de dado dos dois primeiros índices e o restante tudo como string
+console.log('dados do cliente 3', dadosCliente3);
 
 // Array imutáveis com readonly
 const imutavel1: readonly string[] = ['Mauricio', 'Maletta '];

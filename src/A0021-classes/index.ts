@@ -47,7 +47,7 @@ const colaborador3 = new Colaborador('Maria', 'Vieira');
 empresa1.adicionaColaborador(colaborador1);
 empresa1.adicionaColaborador(colaborador2);
 empresa1.adicionaColaborador(colaborador3);
-// Usando structural typing, só poder ter os mesmo atributos que Colaborador
+// Usando structural typing, só poder ter os mesmos atributos que Colaborador
 empresa1.adicionaColaborador({
   nome: 'Chave nome',
   sobrenome: 'Chave sobrenome',
