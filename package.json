@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:frontend": "webpack -w",
+    "build:frontend:video": "webpack --config webpack.config.A0036.js -w",
     "build-backend": "tsc",
     "build-revisao": "tsc --project tsconfig.revisao.json"
   },
