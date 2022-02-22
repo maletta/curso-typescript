@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
 
   // arquivo de entrada é uma das aulas do módulo
-  entry: './src/A0019-exercicio/index.ts',
+  entry: './src/types/A0019-exercicio/index.ts',
 
   // altero qual vai ser arquivo de entrada para configuração do typescript
   module: {
