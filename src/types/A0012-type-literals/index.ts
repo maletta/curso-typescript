@@ -35,14 +35,18 @@ pessoa.sobrenome = 'Montes';
 // não confundir cor: 'Vermelho' | 'Amarelo' | 'Azul' com valor
 // porque cor: 'Vermelho' | 'Amarelo' | 'Azul' representa um tipo
 // são tipos literais substring
-function escolhaACor(cor: 'Vermelho' | 'Amarelo' | 'Azul'): string {
-  return cor;
-}
+// function escolhaACor(cor: 'Vermelho' | 'Amarelo' | 'Azul'): string {
+//   return cor;
+// }
 
 enum cores {
   Vermelho = 'Vermelho',
   Azul = 'Azul',
   Amarelo = 'Cinza', // este vai dar erro
+}
+
+function escolhaACor(cor: 'Vermelho' | 'Azul' | 'Amarelo'): string {
+  return cor;
 }
 
 console.log('escolha a cor ', escolhaACor('Amarelo'));
